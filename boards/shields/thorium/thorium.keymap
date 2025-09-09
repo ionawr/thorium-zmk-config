@@ -40,6 +40,20 @@
             bindings = <&hangul>;
             key-positions = <31 32>;
         };
+
+        util_left {
+            bindings = <&mo 7>;
+            key-positions = <30 31>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        util_right {
+            bindings = <&mo 7>;
+            key-positions = <32 33>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
@@ -115,10 +129,21 @@
 
         mouse_layer {
             bindings = <
-&bootloader  &sys_reset  &to 0      &to 1      &kp LANG1  &kp LANG2  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT
+&trans       &trans      &to 0      &to 1      &kp LANG1  &kp LANG2  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT
 &mkp LCLK    &mkp MCLK   &mkp RCLK  &mkp MB4   &mkp MB5   &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
 &trans       &trans      &trans     &trans     &trans     &trans     &trans          &trans          &trans          &trans
                                     &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans
+            >;
+        };
+
+        // 7: UTIL
+
+        util_layer {
+            bindings = <
+&bootloader  &sys_reset  &trans  &trans  &trans  &trans  &trans  &trans  &sys_reset  &bootloader
+&trans       &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
+&trans       &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
+                                 &trans  &trans  &trans  &trans
             >;
         };
     };
