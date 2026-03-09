@@ -96,7 +96,7 @@
         nav {
             bindings = <
 &bootloader  &td_fun      &td_media    &td_base     &none        &kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT   &kp K_UNDO
-&kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT    &none        &caps_word  &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT
+&kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT    &kp TAB      &caps_word  &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT
 &none        &kp RALT     &td_num      &td_nav      &none        &kp INS     &kp HOME     &kp PG_DN    &kp PG_UP   &kp END
                                         &none        &none        &kp ENTER   &kp BSPC
             >;
