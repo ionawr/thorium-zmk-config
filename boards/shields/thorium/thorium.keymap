@@ -30,14 +30,6 @@
 };
 
 / {
-    macros {
-        lang_toggle: lang_toggle {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F18 &kp LANG1>;
-        };
-    };
-
     behaviors {
         MIRYOKU_TD(td_base, 0)
         MIRYOKU_TD(td_nav, 1)
@@ -52,7 +44,7 @@
         compatible = "zmk,combos";
 
         lang_toggle_combo {
-            bindings = <&lang_toggle>;
+            bindings = <&kp LANG1>;
             key-positions = <30 33>;
         };
 
