@@ -34,7 +34,7 @@
         lang_toggle: lang_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp LANG1>;
+            bindings = <&kp F18 &kp LANG1>;
         };
     };
 
